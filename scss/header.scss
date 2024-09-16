@@ -1,0 +1,75 @@
+@import './style.scss';
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    grid-area: logo;
+}
+
+ul {
+    display: flex;
+    grid-area: nav-bar;
+    gap: 50px;
+    a {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 17.1px;
+        text-align: left;
+        color: $main-dark-color;
+    }
+}
+.logo { grid-area: header; }
+nav { grid-area: menu; }
+.header__btn { grid-area: main; }
+.demo__btn { grid-area: right; }
+
+
+.demo__btn{
+    @include btn($orange-border,$main-orange,white);
+    grid-area: btn;
+}
+
+@media screen and (max-width: 805px) {
+    .header__container {
+        display: grid;
+        grid-template-areas: 
+            "header  main"
+            "menu menu";
+        grid-gap: 1em;
+    }
+    .container{
+        margin: 10px auto;
+    }
+    .demo__btn{
+        font-size:12px;
+        padding: 10px 8px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .nav__items a{
+        font-size:12px;
+       
+    }
+}
+@media screen and (max-width:510px){
+    .demo__btn{
+        font-weight: 400;
+        font-size: 10px;
+        padding: 5px;
+    }
+    .header__container{
+        grid-template:
+        'header main main'
+        'menu  menu menu';
+
+        ul{
+        gap: 22px;
+        }
+    }
+
+}
