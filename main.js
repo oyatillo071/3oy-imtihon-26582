@@ -29,9 +29,21 @@ document.addEventListener('DOMContentLoaded', () => {
     elements.forEach(el => {
       const elementTop = el.getBoundingClientRect().top;
 
-      if (elementTop < windowHeight - 100) { // 100 - это отступ от нижней части экрана
+      if (elementTop < windowHeight - 100) { 
         el.classList.add('visible');
       }
     });
   });
 
+
+
+  
+
+document.getElementById('showTextButton').addEventListener('click', function() {
+    document.getElementById('alertBox').style.display = 'block';
+    document.getElementById('email').value = '';  // Очищаем поле email
+});
+
+document.getElementById('closeAlert').addEventListener('click', function() {
+    document.getElementById('alertBox').style.display = 'none';
+});

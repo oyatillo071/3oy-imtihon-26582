@@ -302,10 +302,17 @@
                 <li class="list__items1"><a href="#">Newsletter</a></li>
                 <li class="list__items2"><span>Over 25000 people have subscribed</span></li>
 
-                <form action="send email" class="send__email">
+
+                <form class="send__email">
                     <input type="email" name="email" id="email" placeholder="Enter your email">
-                    <input id="subscribe" type="button" value="Subscribe">
+                    <input id="showTextButton" class="subscribe" type="button" value="Subscribe">
                 </form>
+                
+                <div id="alertBox" class="alert-box" style="display: none;">
+                    <p>Thanks for subscribe</p>
+                    <button id="closeAlert">Close</button>
+                </div>
+
                 <li class="list__items2"><span>We don't sell your email and spam</span></li>
             </ul>
         </div>
