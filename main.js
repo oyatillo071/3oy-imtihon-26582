@@ -47,3 +47,10 @@ document.getElementById('showTextButton').addEventListener('click', function() {
 document.getElementById('closeAlert').addEventListener('click', function() {
     document.getElementById('alertBox').style.display = 'none';
 });
+
+
+function scrollToSection() {
+    document.getElementById('demo-section').scrollIntoView({
+        behavior: 'smooth'
+    });
+}
