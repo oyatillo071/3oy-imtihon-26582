@@ -19,3 +19,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+
+
+  window.addEventListener('scroll', () => {
+    const elements = document.querySelectorAll('.hidden');
+    const windowHeight = window.innerHeight;
+
+    elements.forEach(el => {
+      const elementTop = el.getBoundingClientRect().top;
+
+      if (elementTop < windowHeight - 100) { // 100 - это отступ от нижней части экрана
+        el.classList.add('visible');
+      }
+    });
+  });
+

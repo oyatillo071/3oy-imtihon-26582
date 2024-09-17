@@ -787,6 +787,29 @@ li {
 
 
 
+.hidden {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+  }
+
+  .visible {
+    opacity: 1;
+  }
+
+
+
+
+.btn,input,button,input[button],select,option{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:1140px) {
     .main__info--section {
