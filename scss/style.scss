@@ -483,6 +483,9 @@ li {
     margin-top: 100px;
     gap: 20px;
     flex-wrap: wrap;
+    a:hover{
+        text-decoration: none;
+    }
 }
 
 .product-card {
@@ -491,6 +494,7 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 
     h4 {
         margin-top: 20px;
@@ -593,7 +597,9 @@ li {
             }
     
         }
-
+        a:hover{
+            text-decoration: none;
+        }
 
     }
 
