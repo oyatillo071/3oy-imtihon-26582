@@ -27,10 +27,13 @@ nav { grid-area: menu; }
 .header__btn { grid-area: main; }
 .demo__btn { grid-area: right; }
 
-
 .demo__btn{
     @include btn($orange-border,$main-orange,white);
     grid-area: btn;
+    &:hover{
+        background-color:$main-orange;
+        color: white;
+    }
 }
 
 @media screen and (max-width: 805px) {

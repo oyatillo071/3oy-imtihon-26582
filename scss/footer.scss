@@ -69,7 +69,6 @@ footer {
     }
 
     .footer__privacy__container {
-        border-top: 1px solid $main-light-color;
         padding-top: 20px;
         display: flex;
         justify-content: space-between;
@@ -174,4 +173,9 @@ color: $main-dark-color;
           padding: 10px;
         }
     }
+}
+
+.footer__top--border{
+    border-top: 1px solid $main-light-color;
+    
 }
