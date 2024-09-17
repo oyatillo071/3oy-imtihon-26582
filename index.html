@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.min.css">
     <link rel="stylesheet" href="./css/header.min.css">
     <link rel="stylesheet" href="./css/footer.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <title>Pense</title>
     <link rel="shortcut icon" href="./images/favicon-icon.svg" type="image/x-icon">
+
 </head>
 
 <body>
@@ -57,7 +58,7 @@
         <div class="header__btn">
             <input class="demo__btn" type="button" value="Request a demo" onclick="scrollToSection()">
         </div>
-        
+
 
     </header>
 
@@ -148,7 +149,7 @@
 
 
         <img class="main__page--img" src="./images/thurd__page--img.png"
-            srcset="./images/thurd__page--img.png 1x,./images/thurd__page--img@2x.png 2x" alt="cycling" >
+            srcset="./images/thurd__page--img.png 1x,./images/thurd__page--img@2x.png 2x" alt="cycling">
     </section>
 
 
@@ -200,7 +201,7 @@
     </section>
 
 
-    <section id="demo-section"  class="price  hidden">
+    <section id="demo-section" class="price  hidden">
         <div class="container price__info">
             <h2 class="price__title">Choose your flexible plan.</h2>
             <div class="price__wrapper">
@@ -208,14 +209,17 @@
                     <img src="./images/start-icon.svg" width="24" height="24" alt="bag icon">
                     <h4 class="plan">Starter Plan</h4>
                     <ul class="price__card__info">
-                        <li class="price__list"><a href="#">Store unlimited data</a></li>
-                        <li class="price__list"><a href="#">Export to pdf,xsl,csv</a></li>
-                        <li class="price__list"><a href="#">Cloud server support</a></li>
+                        <li class="price__list">Store unlimited data</li>
+                        <li class="price__list">Export to pdf,xsl,csv</li>
+                        <li class="price__list">Cloud server support</li>
                     </ul>
 
                     <h4>$9.99/ <span>year</span></h4>
                     <p>up to 3user + 1.99 per user</p>
-                    <input class="get__btn" type="button" value="Get this">
+                    <form action="">
+                        <input class="get__btn" id="price__1" type="button" value="Get this">
+
+                    </form>
                 </div>
 
 
@@ -228,14 +232,16 @@
                     <img src="./images/silver-icon.svg" width="24" height="24" alt="silver plan icon">
                     <h4 class="plan">Silver Plan</h4>
                     <ul class="price__card__info">
-                        <li class="price__list"><a href="#">Store unlimited data</a></li>
-                        <li class="price__list"><a href="#">Export to pdf,xsl,csv</a></li>
-                        <li class="price__list"><a href="#">Cloud server support</a></li>
+                        <li class="price__list">Store unlimited data</li>
+                        <li class="price__list">Export to pdf,xsl,csv</li>
+                        <li class="price__list">Cloud server support</li>
                     </ul>
 
                     <h4>$19.99/ <span>year</span></h4>
                     <p>up to 3user + 1.99 per user</p>
-                    <input class="get__btn" type="button" value="Get this">
+                    <form action="">
+                        <input class="get__btn" id="price__2" type="button" value="Get this">
+                    </form>
 
                 </div>
 
@@ -254,7 +260,12 @@
 
                     <h4>$29.99/ <span>year</span></h4>
                     <p>up to 3user + 1.99 per user</p>
-                    <input class="get__btn" type="button" value="Get this">
+                    <form action="">
+                        <input class="get__btn" id="price__3" type="button" value="Get this">
+                      
+                    </form>
+
+    
                 </div>
 
 
@@ -263,6 +274,8 @@
             </div>
         </div>
     </section>
+ 
+
 
     <section class="download__count  hidden">
         <div class="container download">
@@ -308,7 +321,7 @@
                     <input type="email" name="email" id="email" placeholder="Enter your email">
                     <input id="showTextButton" class="subscribe" type="button" value="Subscribe">
                 </form>
-                
+
                 <div id="alertBox" class="alert-box" style="display: none;">
                     <p>Thanks for subscribe</p>
                     <button id="closeAlert">Close</button>

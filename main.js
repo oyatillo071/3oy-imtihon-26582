@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.getElementById('showTextButton').addEventListener('click', function() {
     document.getElementById('alertBox').style.display = 'block';
-    document.getElementById('email').value = '';  // Очищаем поле email
+    document.getElementById('email').value = ''; 
 });
 
 document.getElementById('closeAlert').addEventListener('click', function() {
@@ -49,8 +49,38 @@ document.getElementById('closeAlert').addEventListener('click', function() {
 });
 
 
+
+
 function scrollToSection() {
     document.getElementById('demo-section').scrollIntoView({
         behavior: 'smooth'
     });
 }
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const button = document.getElementById('price__1');
+
+    button.addEventListener('click', () => {
+        alert('You choosed Starter plan');
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const button = document.getElementById('price__2');
+
+    button.addEventListener('click', () => {
+        alert('You choosed Silver Plan');
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const button = document.getElementById('price__3');
+
+    button.addEventListener('click', () => {
+        alert('You choosed Diamond plan');
+    });
+});
